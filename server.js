@@ -1,7 +1,5 @@
 require('dotenv').config();
 
-console.log({ mongo: process.env.MONGO_URI });
-
 const app = require('./app');
 const connectDB = require('./db/connect');
 

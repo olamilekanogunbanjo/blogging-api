@@ -204,7 +204,7 @@ const getArticle = async (req, res) => {
 const createArticle = async (req, res) => {
 	const article = await Article.create({
 		...req.body,
-		author: req.user._id,
+		author: req.user._id.toString(),
 		state: 'draft',
 	});
 
